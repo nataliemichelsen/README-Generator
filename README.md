@@ -10,16 +10,17 @@ In order to make the README look more polished, I needed to "master" markdown sy
 
 This README Generator needed to meet the following requirements:
 
-* At least one badge
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* Create a command-line application that dynamically generates a README.md from a user's input
+* Include at least one badge
+* Project title (Info)
+* Project Description (Info)
+* Table of Contents (Info)
+* Installation (How-to)
+* Usage (How-to)
+* License (Info)
+* Contributing (Info)
+* Tests (Info)
+* Questions:
   * User GitHub profile picture
   * User GitHub email
 
