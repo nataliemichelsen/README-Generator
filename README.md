@@ -6,6 +6,23 @@ The task was to create a README Generator that came loaded with pre-outlined pro
 
 In order to make the README look more polished, I needed to "master" markdown syntax for professionalism and readability. 
 
+## **Requirements**
+
+This README Generator needed to meet the following requirements:
+
+* At least one badge
+* Project title
+* Description
+* Table of Contents
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
+  * User GitHub profile picture
+  * User GitHub email
+
 ## **Description**
 
 This Generator 
