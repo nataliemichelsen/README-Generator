@@ -64,33 +64,20 @@ const questions  = [
 const answers= async () => {
     const { title, description, tableOfContents, installation, usage, license, contributing, tests, username } = await inquirer.prompt(questions);
 
-    switch (role) {
-        case 'Manager':
-            const { officeNumber } = await inquirer.prompt({
-                message: 'Office Number?',
-                name: 'officeNumber'
-            })
-            employees.push(new Manager(name, id, email, officeNumber))
-            init()
-            break;
-        case 'Intern':
-            const { school } = await inquirer.prompt({
-                message: 'School?',
-                name: 'school'
-            })
-            employees.push(new Intern(name, id, email, school))
-            init()
-            break;
-        case 'Engineer':
-            const { github } = await inquirer.prompt({
-                message: 'GitHub?',
-                name: 'github'
-            })
-            employees.push(new Engineer(name, id, email, github))
-            init()
-            break;
-        default:
-            console.log("No Default")
+    if (newEmployee) {
+        initEmployee();
+    } else {
+        if (employees.length > 0) {
+            if (fs.existsSync( )) {
+                return fs.writeFileSync( , render(employees), )
+            } else {
+                return fs.mkdir( , err => {
+                    if(err) throw err;
+    
+                    return fs.writeFileSync( , render(employees))
+                })
+            }
+        }
     }
 }
 
@@ -119,6 +106,7 @@ const init = async () => {
         }
     }
 }
+
 // const userInput = [title]
 // pass userInput[] into write to file as data parameter
 // add another attributes to each obj in userInput[] 
@@ -135,7 +123,7 @@ axios({
 });
 
 const data = new Promise((resolve,reject) => {
-    const response = axios.get("/api/users")
+    const response = axios.get("/axios/users")
     if (response.length > 0) {
         resolve(response)
     } else {
