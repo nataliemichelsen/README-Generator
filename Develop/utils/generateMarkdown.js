@@ -8,9 +8,7 @@ function generateMarkdown(data) {
 # ${data.license}
 # ${data.contributing}
 # ${data.tests}
-# ${data.questions}
-# ${data.githubProfilePicture}
-# ${data.githubEmail}
+# ${data.username}
 
 `;
 }
