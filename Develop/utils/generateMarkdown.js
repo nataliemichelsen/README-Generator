@@ -12,4 +12,7 @@ function generateMarkdown(data) {
 `;
 }
 
+https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+
+
 module.exports = generateMarkdown;
