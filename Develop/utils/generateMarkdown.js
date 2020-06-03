@@ -9,7 +9,6 @@ function generateMarkdown(data) {
 # ${data.contributing}
 # ${data.tests}
 # ${data.username}
-
 `;
 }
 
