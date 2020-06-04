@@ -12,7 +12,14 @@ function generateMarkdown(data) {
 `;
 }
 
-https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+// Code for badge - write function
+https://img.shields.io/badge/<README Generator>-<Make Yours Today!>-<critical>
+{
+  "schemaVersion": 1,
+  "label": "hello",
+  "message": "sweet world",
+  "color": "orange"
+}
 
 
 module.exports = generateMarkdown;
